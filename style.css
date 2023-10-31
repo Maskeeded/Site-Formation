@@ -8,5 +8,80 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+}
+
+:root {
+
+    --text-color: #fff;
+    --bg-color: rgb(35, 39, 37);
+    --main-color: rgb(206, 126, 6);
+    --other-color: #fff;
+
+    --h1-font: 4.5rem;
+    --h2-font: 2.9rem;
+    --p-font: 1rem;
+
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16%;
+    background: var(--bg-color);
+    transition: all .50s ease;
+}
+
+.IconLogo {
+    font-size: 36px;
+    color: var(--text-color);
+    font-weight: 900;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: var(--text-color);
+    font-weight: 950;
+    color: var(--text-color);
+    margin-left: 40px;
+    transition: all .50s ease;
+}
+
+.navbar a:hover {
+    padding-right: 10px;
+    color: var(--main-color);
+}
+
+#iconsmenu {
+    font-size: 35px;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 11px 26px;
+    background: transparent;
+    color: var(--text-color);
+    border: 4px solid var(--main-color);
+
 
 }
