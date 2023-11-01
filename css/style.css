@@ -206,7 +206,7 @@ section {
 .exp-box1 h1 {
 
     position: relative;
-    left: 35%;
+    left: 33%;
     top: -10px;
     padding: 10px;
     display: inline-block;
@@ -248,15 +248,7 @@ section {
     83.1860%, 92.3023% { content: "COMPUTER MUSEUM NAM-IP"; }
   
   }
-  
-  @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-  }
-  
-  .typewriter {
-    --caret: currentcolor;
-  }
+    
   
   .typewriter::before {
     content: "";
@@ -269,9 +261,6 @@ section {
     animation: blink 0.5s linear infinite;
   }
   
-  .typewriter.thick::after {
-    border-right: 1ch solid var(--caret);
-  }
   
   .typewriter.nocaret::after {
     border-right: 0;
@@ -282,18 +271,5 @@ section {
     .typewriter::after {
       animation: none;
     }
-    
-    @keyframes sequencePopup {
-      0%, 100% { content: "developer"; }
-      25% { content: "writer"; }
-      50% { content: "reader"; }
-      75% { content: "human"; }
-    }
-  
-    .typewriter::before {
-      content: "developer";
-      animation: sequencePopup 12s linear infinite;
-    }
   }
   
-  /**/
