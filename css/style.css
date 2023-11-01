@@ -327,10 +327,6 @@ section {
   
 
   
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
   /* Fading animation */
   .fade {
     animation-name: fade;
