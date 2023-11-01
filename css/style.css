@@ -181,3 +181,118 @@ section {
 .mes-infos {
     margin-bottom: 40px;
 }
+
+
+.exp-box1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 15px solid rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+    z-index: 2;
+}
+
+.imgexpo1 {
+    margin: 0;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+.exp-box1 h1 {
+
+    position: relative;
+    left: 40%;
+    top: -10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+    0.0000%, 27.3488% { content: ""; }
+    1.1395%, 26.2093% { content: "C"; }
+    2.2791%, 25.0698% { content: "Co"; }
+    3.4186%, 23.9302% { content: "Com"; }
+    4.5581%, 22.7907% { content: "Comp"; }
+    5.6977%, 21.6512% { content: "Compu"; }
+    6.8372%, 20.5116% { content: "Comput"; }
+    7.9767%, 19.3721% { content: "Compute"; }
+    9.1163%, 18.2326% { content: "Computer"; }
+  
+    30.7674%, 51.2791% { content: ""; }
+    31.9070%, 50.1395% { content: "M"; }
+    33.0465%, 49.0000% { content: "Mu"; }
+    34.1860%, 47.8605% { content: "Mus"; }
+    35.3256%, 46.7209% { content: "Muse"; }
+    36.4651%, 45.5814% { content: "Museu"; }
+    37.6047%, 44.4419% { content: "Museum"; }
+  
+    54.6977%, 75.2093% { content: ""; }
+    55.8372%, 74.0698% { content: "N"; }
+    56.9767%, 72.9302% { content: "NA"; }
+    58.1163%, 71.7907% { content: "NAM"; }
+    59.2558%, 70.6512% { content: "NAM-"; }
+    60.3953%, 69.5116% { content: "NAM-I"; }
+    61.5349%, 68.3721% { content: "NAM-IP"; }
+
+    78.6279%, 96.8605% { content: ""; }
+    79.7674%, 95.7209% { content: "COMPUTER"; }
+    80.9070%, 94.5814% { content: "COMPUTER MUSEUM"; }
+    82.0465%, 93.4419% { content: "COMPUTER MUSEUM NAM"; }
+    83.1860%, 92.3023% { content: "COMPUTER MUSEUM NAM-IP"; }
+  
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .typewriter {
+    --caret: currentcolor;
+  }
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
+  
+  .typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+  }
+  
+  .typewriter.nocaret::after {
+    border-right: 0;
+  }
+  
+  
+  @media (prefers-reduced-motion) {
+    .typewriter::after {
+      animation: none;
+    }
+    
+    @keyframes sequencePopup {
+      0%, 100% { content: "developer"; }
+      25% { content: "writer"; }
+      50% { content: "reader"; }
+      75% { content: "human"; }
+    }
+  
+    .typewriter::before {
+      content: "developer";
+      animation: sequencePopup 12s linear infinite;
+    }
+  }
+  
+  /**/
