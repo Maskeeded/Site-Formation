@@ -206,10 +206,11 @@ section {
 .exp-box1 h1 {
 
     position: relative;
-    left: 40%;
+    left: 35%;
     top: -10px;
     padding: 10px;
     display: inline-block;
+    
 }
 
 /* Typewriter effect 1 */
