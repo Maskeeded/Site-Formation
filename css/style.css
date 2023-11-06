@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
 
 * {
     padding: 0;
@@ -21,6 +23,7 @@
 
     --h1-font: 4.5rem;
     --h2-font: 2.9rem;
+    --navbar-font: 1.4rem;
     --p-font: 1rem;
     
 
@@ -60,7 +63,7 @@ span {
 }
 
 .navbar a {
-    font-size: var(--text-color);
+    font-size: var(--navbar-font);
     font-weight: 950;
     color: var(--text-color);
     margin-left: 40px;
@@ -264,7 +267,6 @@ section {
   
   .typewriter::after {
     content: "";
-    border-right: 1px solid var(--caret);
     animation: blink 0.5s linear infinite;
   }
   
@@ -330,9 +332,9 @@ section {
 
 
   .card-container {
-    background-color: #231E39;
+    background-color: #231e39c0;
     border-radius: 5px;
-    box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px var(--main-color);
     color: #B3B8CD;
     padding-top: 30px;
     position: relative;
@@ -355,14 +357,14 @@ section {
   }
   
   .card-container .round {
-    border: 1px solid #03BFCB;
+    border: 1px solid var(--main-color);
     border-radius: 50%;
     padding: 7px;
   }
   
   button.primary {
-    background-color: #03BFCB;
-    border: 1px solid #03BFCB;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
     border-radius: 3px;
     color: #231E39;
     font-family: Montserrat, sans-serif;
@@ -372,12 +374,13 @@ section {
   
   button.primary.ghost {
     background-color: transparent;
-    color: #02899C;
+    color: var(--main-color);
   }
   
   .skills {
-    background-color: #1F1A36;
+    background-color: rgba(41, 35, 77, 0.712);
     text-align: left;
+    color: white;
     padding: 15px;
     margin-top: 30px;
   }
