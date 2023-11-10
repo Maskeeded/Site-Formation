@@ -342,11 +342,11 @@ section {
     box-shadow: 0px 0px 5px var(--main-color);
     color: #B3B8CD;
     padding-top: 30px;
-    position: relative;
+    position: absolute;
     width: 350px;
     max-width: 100%;
     text-align: center;
-    left: -200px;
+    left: 150px;
   }
   
   .card-container .pro {
@@ -418,7 +418,8 @@ section {
     
   }
   .row .col:last-child {
-    margin-left: 1em;
+    margin-top: -0.4rem;
+    margin-left: 21em;
   }
   /* Accordion styles */
   .tabs {
@@ -437,7 +438,7 @@ section {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background: #242b33cb;
+    background: #242b33;
     color: white;
     font-weight: bold;
     cursor: pointer;
