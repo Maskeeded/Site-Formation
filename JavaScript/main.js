@@ -1,5 +1,4 @@
-let slideIndex = 0;
-showSlides(slideIndex);
+let slideIndex = 1;
 
 // Next/previous controls
 function plusSlides(n) {
@@ -21,4 +20,6 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
 }
+
+addEventListener('DOMContentLoaded', showSlides, slideIndex);
 
